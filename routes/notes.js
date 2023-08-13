@@ -30,7 +30,7 @@ notes.post('/addNote', (req, res) => {
 });
 
 
-// DELETE note from db
+// DELETE note from db by using Params, readfromfile and writetoFile
 notes.delete('/:id', (req, res) => {
     console.log('the id to delete is: ' + req.params.id);
     readFromFile('./db/db.json')
